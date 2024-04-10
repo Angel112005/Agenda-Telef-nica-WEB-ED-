@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Agenda Telefónica</title>
+</head>
+<body>
+    <header id="header"> MI &nbsp;AGENDA &nbsp; TELEFÓNICA </header>
+
+    <div class="inputs_box">
+        
+        <h2 id="title_inputs">DATOS DE NUEVO CONTACTO</h2>
+
+        <label for="nombre">Nombre (s):</label>
+            <input type="text" placeholder="Nombre..." id="nombre">
+        <br> <br> <br>
+        
+        <label for="apellido">Apellido (s):</label>
+            <input type="text" placeholder="Apellido(s)..." id="apellido">
+        <br> <br> <br>
+        
+        <label for="telefono">Número telefónico:</label>
+            <input type="tel" placeholder="Número de teléfono..." id="telefono">
+        <br> <br> <br>
+
+        <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" placeholder="Correo electrónico...">
+
+        <br> <br> <br> <br>
+        <button class="btnControls box1" id="guardarBtn">GUARDAR DATOS</button>
+        <br> <br> <br> <br>
+        <button class="btnControls box1" id="mostrarBtn">MOSTRAR CONTACTOS</button>    
+    </div>
+        
+    <div id="listaContactos" class="contactos">
+    </div>
+
+    <script type="module" src="./controllers/index.js"></script>
+</body>
+</html>
